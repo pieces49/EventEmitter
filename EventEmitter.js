@@ -459,7 +459,7 @@
 
     // Expose the class either via AMD, CommonJS or the global object
     if (typeof define === 'function' && define.amd) {
-        define(function () {
+        define( 'EventEmitter', function () {
             return EventEmitter;
         });
     }
