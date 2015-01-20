@@ -5,14 +5,7 @@
  * @preserve
  */
 
- ;(function() {
-  (function(root, factory) {
-    if (typeof define === 'function' && define.amd) {
-      return define('EventEmitter', [], factory);
-    } else {
-      return root.EventEmitter = factory();
-    }
-  })(window, function() {
+;(function () {
     'use strict';
 
     /**
@@ -476,5 +469,4 @@
     else {
         exports.EventEmitter = EventEmitter;
     }
-}).call(this);
-
+}.call(this));
